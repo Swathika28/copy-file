@@ -24,19 +24,21 @@ Copy the variable data into the new file using write().
 Call the function.
 
 ## program:
-
+```
 Python program for copying the contents from one file to another file.
 Developed by: Swathika G
 RegisterNumber: 21500231
-
-def copy(fname,newfile):
-  with open(fname,'r')as fp:
+```
+```
+def copy(fname,newfile):   
+  with open(fname,'r')as fp:   
     with open(newfile,'w')as fp1:
       data1=fp.read()
       fp1.write(data1)
 fname=input("Enter an existing file: ")
 newfile=input("Enter a name for new file: ")
 copy(fname,newfile)
+```
 
 ### OUTPUT:
 
